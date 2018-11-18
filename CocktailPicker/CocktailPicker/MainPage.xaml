@@ -6,14 +6,21 @@
 
     
 	<Label Text="Pick a base alcohol!" 
+           TextColor="White"
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
     <StackLayout>
-        <Button Text="Gin"/>
-        <Button Text="Vodka"/>
-        <Button Text="Rum"/>
-        <Button Text="Whiskey"/>
-        <Button Text="Tequila"/>
-        <Button Text="Exotic"/>
+        <Button Text="Gin"
+                Pressed="OnAlcoholChosen"/>
+        <Button Text="Vodka"
+                Pressed="OnAlcoholChosen"/>
+        <Button Text="Rum"
+                Pressed="OnAlcoholChosen"/>
+        <Button Text="Whiskey"
+                Pressed="OnAlcoholChosen"/>
+        <Button Text="Tequila"
+                Pressed="OnAlcoholChosen"/>
+        <Button Text="Exotic"
+                Pressed="OnAlcoholChosen"/>
     </StackLayout>
 </ContentPage>

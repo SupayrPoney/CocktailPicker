@@ -13,5 +13,15 @@ namespace CocktailPicker
 		{
 			InitializeComponent();
 		}
-	}
+
+        async void OnAlcoholChosen(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            string alcohol_name = button.Text;
+
+            var alcoholChosenPage = new TasteChooserPage(alcohol_name);
+            await Navigation.PushAsync(alcoholChosenPage);
+
+        }
+    }
 }

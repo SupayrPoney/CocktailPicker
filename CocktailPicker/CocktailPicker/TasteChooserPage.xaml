@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CocktailPicker.TasteChooserPage">
+    <Label Text="Pick a main taste!" 
+           TextColor="White"
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+    <StackLayout>
+        <Button Text="Boozy"/>
+        <Button Text="Bitter"/>
+        <Button Text="Sour"/>
+        <Button Text="Sweet"/>
+        <Button Text="Fresh"/>
+        <Button Text="Herbal"/>
+        <Button Text="Smoky"/>
+    </StackLayout>
+</ContentPage>
