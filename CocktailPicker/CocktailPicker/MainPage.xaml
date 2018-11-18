@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CocktailPicker"
+             x:Class="CocktailPicker.MainPage">
+
+    
+	<Label Text="Pick a base alcohol!" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+    <StackLayout>
+        <Button Text="Gin"/>
+        <Button Text="Vodka"/>
+        <Button Text="Rum"/>
+        <Button Text="Whiskey"/>
+        <Button Text="Tequila"/>
+        <Button Text="Exotic"/>
+    </StackLayout>
+</ContentPage>
