@@ -28,6 +28,7 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)TasteChooserPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

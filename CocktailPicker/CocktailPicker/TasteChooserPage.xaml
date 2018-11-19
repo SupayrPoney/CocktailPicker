@@ -1,18 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              x:Class="CocktailPicker.TasteChooserPage">
     <Label Text="Pick a main taste!" 
            TextColor="White"
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-    <StackLayout>
-        <Button Text="Boozy"/>
-        <Button Text="Bitter"/>
-        <Button Text="Sour"/>
-        <Button Text="Sweet"/>
-        <Button Text="Fresh"/>
-        <Button Text="Herbal"/>
-        <Button Text="Smoky"/>
-    </StackLayout>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*" />
+            <ColumnDefinition Width="5*" />
+        </Grid.ColumnDefinitions>
+        <Button  Text="Boozy"
+                 Grid.Row="0" Grid.Column="0"
+                 BackgroundColor="SandyBrown"
+                 FontSize="Large"/>
+        <Button  Text="Bitter"
+                 Grid.Row="0" Grid.Column="1"
+                 BackgroundColor="Yellow"
+                 FontSize="Large"/>
+        <Button  Text="Sour"
+                 Grid.Row="1" Grid.Column="0"
+                 BackgroundColor="Lime"
+                 FontSize="Large"/>
+        <Button  Text="Sweet"
+                 Grid.Row="1" Grid.Column="1"
+                 BackgroundColor="HotPink"
+                 FontSize="Large"/>
+        <Button  Text="Fresh"
+                 Grid.Row="2" Grid.Column="0"
+                 BackgroundColor="LightCyan"
+                 FontSize="Large"/>
+        <Button  Text="Herbal"
+                 Grid.Row="2" Grid.Column="1"
+                 BackgroundColor="ForestGreen"
+                 FontSize="Large"/>
+        <Button  Text="Smoky"
+                 Grid.Row="3" Grid.Column="0"
+                 BackgroundColor="LightGray"
+                 FontSize="Large"/>
+    </Grid>
 </ContentPage>

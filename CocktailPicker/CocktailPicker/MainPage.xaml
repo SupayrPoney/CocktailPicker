@@ -9,18 +9,46 @@
            TextColor="White"
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
-    <StackLayout>
-        <Button Text="Gin"
-                Pressed="OnAlcoholChosen"/>
-        <Button Text="Vodka"
-                Pressed="OnAlcoholChosen"/>
-        <Button Text="Rum"
-                Pressed="OnAlcoholChosen"/>
-        <Button Text="Whiskey"
-                Pressed="OnAlcoholChosen"/>
-        <Button Text="Tequila"
-                Pressed="OnAlcoholChosen"/>
-        <Button Text="Exotic"
-                Pressed="OnAlcoholChosen"/>
-    </StackLayout>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*" />
+            <ColumnDefinition Width="5*" />
+        </Grid.ColumnDefinitions>
+        <Button  Text="Gin"
+                 Grid.Row="0" Grid.Column="0"
+                 BackgroundColor="SandyBrown"
+                 FontSize="Large"
+                 Pressed="OnAlcoholChosen"/>
+        <Button  Text="Vodka"
+                 Grid.Row="0" Grid.Column="1"
+                 BackgroundColor="Yellow"
+                 FontSize="Large"
+                 Pressed="OnAlcoholChosen"/>
+        <Button  Text="Rum"
+                 Grid.Row="1" Grid.Column="0"
+                 BackgroundColor="LimeGreen"
+                 FontSize="Large"
+                 Pressed="OnAlcoholChosen"/>
+        <Button  Text="Whiskey"
+                 Grid.Row="1" Grid.Column="1"
+                 BackgroundColor="LightPink"
+                 FontSize="Large"
+                 Pressed="OnAlcoholChosen"/>
+        <Button  Text="Tequila"
+                 Grid.Row="2" Grid.Column="0"
+                 BackgroundColor="Coral"
+                 FontSize="Large"
+                 Pressed="OnAlcoholChosen"/>
+        <Button  Text="Exotic"
+                 Grid.Row="2" Grid.Column="1"
+                 BackgroundColor="ForestGreen"
+                 FontSize="Large"
+                 Pressed="OnAlcoholChosen"/>
+        <Button  Text="Mocktail"
+                 Grid.Row="3" Grid.Column="0"
+                 BackgroundColor="WhiteSmoke"
+                 FontSize="Large"
+                 Pressed="OnAlcoholChosen"/>
+    </Grid>
 </ContentPage>
