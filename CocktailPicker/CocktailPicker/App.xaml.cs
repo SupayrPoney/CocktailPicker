@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -12,7 +13,8 @@ namespace CocktailPicker
 		public App ()
 		{
 			InitializeComponent();
-
+            var license = File.ReadAllText("License.txt");
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(license);
 
             MainPage = new NavigationPage(new MainPage())
             {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Syncfusion.ListView.XForms.UWP;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -20,6 +21,7 @@ namespace CocktailPicker.UWP
         public MainPage()
         {
             this.InitializeComponent();
+            SfListViewRenderer.Init();
 
             LoadApplication(new CocktailPicker.App());
         }

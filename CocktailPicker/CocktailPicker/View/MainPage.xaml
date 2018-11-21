@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CocktailPicker"
+             xmlns:model="using:CocktailPicker.Model"
+             xmlns:sync="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             x:Class="CocktailPicker.MainPage">
+
+    
+	<Label Text="Pick a base alcohol!" 
+           TextColor="White"
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+    <ContentPage.BindingContext>
+        <model:AlcoholTypesRepository />
+    </ContentPage.BindingContext>
+    <sync:SfListView x:Name="listView" 
+                   ItemsSource="{Binding AlcoholType}"
+                   ItemSize="100">
+
+        <sync:SfListView.LayoutManager>
+            <sync:GridLayout SpanCount="4" />
+        </sync:SfListView.LayoutManager>
+        <sync:SfListView.ItemTemplate>
+            <DataTemplate>
+                <Image Source="{Binding Image}"/>
+            </DataTemplate>
+        </sync:SfListView.ItemTemplate>
+    </sync:SfListView>
+
+</ContentPage>
